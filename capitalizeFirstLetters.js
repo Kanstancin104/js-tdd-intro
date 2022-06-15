@@ -1,6 +1,3 @@
-// capitalizeFirstLetters.js
-const assert = require('assert');
-
 // WRITE THE ACTUAL FUNCTION HERE
 function capitalizeFirstLetters(input) {
     let words = input.split(" ");
@@ -13,17 +10,4 @@ function capitalizeFirstLetters(input) {
     return words.join(" ");
 }
 
-// Check that capitalizeFirstLetters transforms a string with several words correctly
-assert.strictEqual(capitalizeFirstLetters('i love programming'), 'I Love Programming');
-
-// Check that it works for a 1-word string
-assert.strictEqual(capitalizeFirstLetters('coding'), 'Coding');
-
-// Check that it works for a 1-character string
-assert.strictEqual(capitalizeFirstLetters('x'), 'X');
-
-// Check that it works for an empty string
-assert.strictEqual(capitalizeFirstLetters(''), '');
-
-// Check that initial capital letter remains capital
-assert.strictEqual(capitalizeFirstLetters('Y'), 'Y');
+module.exports = capitalizeFirstLetters;
